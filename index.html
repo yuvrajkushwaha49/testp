@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Creative Design Studio</title>
+  <title>GitHub Merge Conflict Test</title>
   <style>
     :root {
       color-scheme: light;
-      --ink: #1a1f35;
-      --muted: #6b7280;
-      --paper: #f8f9fb;
-      --line: #e5e7eb;
-      --accent: #6366f1;
-      --accent-dark: #4f46e5;
-      --sun: #ec4899;
-      --rose: #8b5cf6;
+      --ink: #22142b;
+      --muted: #75657f;
+      --paper: #fff8f0;
+      --line: #ead9c7;
+      --accent: #e4572e;
+      --accent-dark: #b33a18;
+      --sun: #ffc857;
+      --rose: #4ecdc4;
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
@@ -43,7 +43,7 @@
       justify-content: space-between;
       gap: 24px;
       padding: 18px clamp(20px, 5vw, 72px);
-      background: rgba(251, 250, 247, 0.88);
+      background: rgba(255, 248, 240, 0.92);
       border-bottom: 1px solid var(--line);
       backdrop-filter: blur(16px);
     }
@@ -158,10 +158,10 @@
       border: 1px solid var(--line);
       border-radius: 8px;
       background:
-        linear-gradient(135deg, rgba(23, 126, 137, 0.12), transparent 42%),
-        linear-gradient(45deg, rgba(242, 184, 75, 0.18), transparent 55%),
-        #ffffff;
-      box-shadow: 0 24px 80px rgba(24, 33, 47, 0.12);
+        linear-gradient(135deg, rgba(228, 87, 46, 0.2), transparent 42%),
+        linear-gradient(45deg, rgba(78, 205, 196, 0.22), transparent 55%),
+        #fffdf8;
+      box-shadow: 0 28px 90px rgba(34, 20, 43, 0.18);
     }
 
     .shape {
@@ -315,7 +315,7 @@
   <header class="site-header">
     <a class="brand" href="#">
       <span class="brand-mark">B</span>
-      <span>Creative Studio</span>
+      <span>Conflict Test Studio</span>
     </a>
     <nav aria-label="Primary navigation">
       <a href="#work">Work</a>
@@ -327,11 +327,11 @@
   <main>
     <section class="hero" id="work">
       <div class="hero-copy">
-        <p class="eyebrow">Simple websites for sharp ideas</p>
-        <h1>Create Amazing Digital Experiences</h1>
+        <p class="eyebrow">GitHub merge conflict practice</p>
+        <h1>This line was edited for conflict testing.</h1>
         <p class="intro">
-          A clean, responsive starter site with confident typography, practical sections,
-          and a polished layout ready for your own content.
+          This homepage text has been changed on purpose. Edit these same lines
+          differently in another branch to trigger a merge conflict.
         </p>
         <div class="actions">
           <a class="button primary" href="#contact">Start a Project</a>
