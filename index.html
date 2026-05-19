@@ -44,6 +44,7 @@
       gap: 24px;
       padding: 18px clamp(20px, 5vw, 72px);
       background: rgba(255, 248, 240, 0.92);
+      background: linear-gradient(90deg, rgba(99,102,241,0.06), rgba(79,70,229,0.03));
       border-bottom: 1px solid var(--line);
       backdrop-filter: blur(16px);
     }
@@ -61,7 +62,7 @@
       height: 34px;
       display: grid;
       place-items: center;
-      background: var(--accent);
+      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
       color: #fff;
       border-radius: 8px;
       font-weight: 900;
@@ -131,20 +132,22 @@
       justify-content: center;
       min-height: 48px;
       padding: 0 20px;
-      border: 1px solid var(--ink);
+      border: 1px solid var(--line);
       border-radius: 8px;
       font-weight: 800;
       transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
     }
 
     .button.primary {
-      background: var(--ink);
+      background: linear-gradient(90deg, var(--accent), var(--accent-dark));
       color: #fff;
-      box-shadow: 0 12px 26px rgba(24, 33, 47, 0.16);
+      border: none;
+      box-shadow: 0 16px 40px rgba(79, 70, 229, 0.14);
     }
 
     .button.secondary {
       background: transparent;
+      color: var(--accent-dark);
     }
 
     .button:hover {
@@ -167,8 +170,8 @@
     .shape {
       position: absolute;
       border-radius: 8px;
-      border: 2px solid var(--ink);
-      box-shadow: 8px 8px 0 rgba(24, 33, 47, 0.12);
+      border: none;
+      box-shadow: 12px 12px 0 rgba(79,70,229,0.06);
     }
 
     .shape.one {
@@ -314,7 +317,7 @@
 <body>
   <header class="site-header">
     <a class="brand" href="#">
-      <span class="brand-mark">B</span>
+      <span class="brand-mark">C</span>
       <span>Conflict Test Studio</span>
     </a>
     <nav aria-label="Primary navigation">
@@ -327,8 +330,8 @@
   <main>
     <section class="hero" id="work">
       <div class="hero-copy">
-        <p class="eyebrow">GitHub merge conflict practice</p>
-        <h1>This line was edited for conflict testing.</h1>
+        <p class="eyebrow">Simple websites for sharp ideas</p>
+        <h1>Create Amazing Digital Experiences</h1>
         <p class="intro">
           This homepage text has been changed on purpose. Edit these same lines
           differently in another branch to trigger a merge conflict.
@@ -382,7 +385,7 @@
 
   <footer class="footer" id="contact">
     <span>Ready when your idea is.</span>
-    <a href="mailto:hello@example.com">hello@example.com</a>
+    <a href="mailto:contact@creative.studio">contact@creative.studio</a>
   </footer>
 </body>
 </html>
